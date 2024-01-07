@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+
+:root {
+    --font-principal: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom,rgba(77, 0, 100, 0.822),rgba(31, 0, 41, 0.822));
+
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-box{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.137);
+    
+}
+
+.form-box h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.616);
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+input{
+    background-color:white;
+    border: 2px solid rgba(0, 0, 0, 0.329);
+    border-radius: 20px;
+    outline: none;
+    padding: 20px;
+    margin: 15px;
+    font-size: 25px;
+    width: 350px;
+    
+    text-align: center;
+}
+
+button{
+    background-color: rgba(77, 0, 100, 0.822);
+    border-radius: 15px;
+    padding: 10px;
+    width: 50%;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: ease 0.3s;
+    margin: 20px auto;
+    color: white;
+}
+
+button:hover{
+    background-color: rgba(124, 0, 161, 0.822);
+    width: 60%;
+}
+
+
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Safari/Chrome */
+    margin: 0; /* Remover margens padrão */
+}
+
+/* Estilize a mensagem de erro padrão */
+label.error {
+    font-size: 0px;
+}
+
+/* Estilize o campo de entrada com erro */
+input.error {
+    border: 1px solid red;
+}
